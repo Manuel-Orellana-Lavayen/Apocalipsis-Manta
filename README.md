@@ -5,8 +5,8 @@ Plataforma de simulación en tiempo real y motor inteligente de evacuación urba
 ---
 
 ## Links de Entrega
-- **Web Desplegada (Mapa en Vivo):** ``
-- **Documentación Interactiva API (Swagger):** ``
+- **Web Desplegada (Mapa en Vivo):** https://beyond-null-alternate-integral.trycloudflare.com/inicio.html
+- **Documentación Interactiva API (Swagger):** https://beyond-null-alternate-integral.trycloudflare.com/docs
 - **Región de AWS utilizada:** `us-east-1` (N. Virginia)
 
 ---
@@ -33,10 +33,11 @@ Para evitar las trampas clásicas de arquitecturas serverless en simulaciones po
 
 ---
 
-## 🔌 Contrato Técnico y Endpoints
+## Contrato Técnico y Endpoints
 
-Autenticación requerida en todos los endpoints mediante cabecera:
-`x-api-key: <TU_API_KEY>` (Por defecto en entorno local: `clave-desarrollo-local`).
+Autenticación requerida en todos los endpoints mediante la cabecera:
+`x-api-key: clave-desarrollo-local` 
+*(Clave configurada por defecto para la evaluación del jurado en el entorno en vivo).*
 
 | Método | Endpoint | Descripción |
 | :--- | :--- | :--- |
@@ -57,16 +58,15 @@ Autenticación requerida en todos los endpoints mediante cabecera:
 
 ### Captura de AWS Budgets (Alerta configurada desde el Día 1)
 
-![AWS Budget Alert](./imagenes/budget.png)
-
+![AWS Budget Alert](./API/Web/imagenes/budget.png)
 ---
 
 ##  Ejecución Local
 
 ```bash
 # 1. Clonar el repositorio
-git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-cd TU_REPOSITORIO
+git clone [https://github.com/Manuel-Orellana-Lavayen/Apocalipsis-Manta.git)
+cd Apocalipsis-Manta
 
 # 2. Crear entorno virtual e instalar dependencias
 python -m venv venv

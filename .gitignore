@@ -1,1 +1,4 @@
-.idea/
+
+echo ".idea/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "venv/" >> .gitignore
